@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(125deg, #f6d365, #f1714e);
+    height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-todo-input,
+.form-todo-button{
+    background-color: white;
+    padding: 5px;
+    border:none;
+    font-size: 1.1rem;
+}
+.form-todo-input:focus,
+.form-todo-button:focus{
+    outline: none;
+}
+.form-todo-button{
+    cursor: pointer;
+    color: #df8f27;
+}
+.form-todo-button:hover{
+    color: #f3554a;
+}
+
+.container-todo{
+    display: flex;
+    justify-content: center;
+}
+
+.container-todo-list{
+    width: 30%;
+    list-style: none;
+}
+
+.wrap-todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .4rem;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+
+.todo-item{
+    flex: 1;
+    padding-left: 4px;
+}
+
+.todo-btn-complete,
+.todo-btn-trash{
+    background: #1fd4a7;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+.todo-btn-trash{
+    background: #4077df;
+}
+.todo-btn-trash .fa-trash-alt,
+.todo-btn-complete .fa-check{
+    pointer-events: none;
+}
+.check-complete{
+    font-weight: 200;
+    font-style: italic;
+    color: rgb(66, 56, 56);
+    text-decoration: line-through;
+}
+.fall{
+    transform: translateY(5rem) rotateZ(30deg);
+    opacity: 0;
+}
+.wrap-select{
+    margin-left:1rem;
+    position: relative;
+    overflow: hidden;
+}
+.select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: white;
+    color: #b86903;
+    width: 9rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.wrap-select::after{
+    content: "\25BC";
+    position: absolute;
+    top:0;
+    right:0;
+    pointer-events: none;
+    color: #b86903;
+    padding: .5rem;
+    background: #f1714e;
+}
+
+/* terinspirasi dari tutorial Channel Youtube 'Dev Ed'  */

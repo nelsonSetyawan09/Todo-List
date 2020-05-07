@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo LIst</title>
+</head>
+<body>
+    <header>
+        <h3>Nelson's Todo List</h3>
+    </header>
+    <form>
+        <input type="text" class="form-todo-input">
+        <button class="form-todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="wrap-select">
+            <select name="filter-todos" class="select">
+                <option value="all">All</option>
+                <option value="completed">Compeleted</option>
+                <option value="uncompleted">Uncompeleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="container-todo">
+        <ul class="container-todo-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+
+    <!-- /* terinspirasi dari tutorial Channel Youtube 'Dev Ed'  */ -->
+</body>
+</html>
